@@ -1,0 +1,9 @@
+# Los ambientes de de despliegue son:
+# PROD: Producción
+# TEST: Pruebas
+# DEV: Desarrollo
+env: DEV
+
+# Datos de mongo db
+mongo_port: 27017
+host_mongo: mongodb
