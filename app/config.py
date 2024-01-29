@@ -2,7 +2,6 @@ import logging
 import yaml
 import motor.motor_asyncio
 
-from dotenv import load_dotenv
 from functools import lru_cache
 from pydantic_settings import BaseSettings
 from metadata.path import Path
@@ -85,7 +84,7 @@ def get_bd():
     mongo_puerto = get_config().get('mongo_port')
     mongo_host = get_config().get('host_mongo')
     client = motor.motor_asyncio.AsyncIOMotorClient(mongo_host, mongo_puerto)
-    bd = client.api_books
+    bd = client.pepe
 
     return bd
 
