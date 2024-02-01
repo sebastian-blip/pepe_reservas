@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#7FFF00, #008000);
+}
+
+.container {
+    border: 2px solid #fff; /* Ajusta el ancho y el color del borde según tus preferencias */
+    border-radius: 10px; /* Añade bordes redondeados si lo deseas */
+    overflow: hidden; /* Evita que los bordes se extiendan fuera del contenedor */
+}
+
+table {
+    color: #fff;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%; /* Haz que la tabla ocupe el 100% del contenedor */
+}
+
+thead {
+    background: rgba(243, 140, 210, 0.4);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-right: solid 1px rgba(255, 255, 255, 0.2); /* Añade un borde a la derecha de cada celda */
+}
+
+th:last-child, td:last-child {
+    border-right: none; /* Elimina el borde a la derecha de la última celda de cada fila */
+}
+
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: rgba(243, 103, 199, 0.4);
+}
+
